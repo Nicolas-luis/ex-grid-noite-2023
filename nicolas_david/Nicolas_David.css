@@ -1,0 +1,124 @@
+.container {
+    background-color: beige;
+    display: grid;
+    gap: 5px;
+    min-width: 600px;
+    grid-template-areas:
+        'header header header header'
+        'navegacao navegacao navegacao navegacao'
+        'conteudo1 conteudo1 conteudo2 conteudo2'
+        'conteudo3 conteudo3 conteudo4 conteudo4'
+        'foto1 foto2 foto3 foto4'
+        'footer footer footer footer'
+}
+
+.item {
+    background-color: aquamarine;
+}
+
+.header {
+    grid-area: header;
+    background-color: chartreuse;
+}
+
+.navegacao {
+    grid-area: navegacao;
+}
+
+.conteudo1 {
+    grid-area: conteudo1;
+}
+
+.conteudo2 {
+    grid-area: conteudo2;
+}
+
+.conteudo3 {
+    grid-area: conteudo3;
+}
+
+.conteudo4 {
+    grid-area: conteudo4;
+}
+
+.foto {
+    height: 150px;
+    width: 150px;
+    /* background-color: black; */
+    border-radius: 50%;
+    margin-left: 25%;
+}
+
+.foto1 {
+    grid-area: foto1;
+
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.foto4 {
+    grid-area: foto4;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+#fam-simp {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.col {
+    width: 6.25%;
+    /* 60 / 960 = 0.0625 */
+}
+
+.grid {}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        background-color: blue;
+        display: grid;
+        gap: 5px;
+        min-width: 600px;
+        grid-template-areas:
+            'header header '
+            'navegacao navegacao '
+            'conteudo1 conteudo2'
+            'conteudo3  conteudo4 '
+            'foto1 foto2'
+            'foto3 foto4'
+            'footer footer';
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+        justify-content: center;
+        background-color: black;
+        display: grid;
+        gap: 5px;
+        min-width: 600px;
+        grid-template-areas:
+            'header'
+            'navegacao'
+            'conteudo1'
+            'conteudo2'
+            'conteudo3'
+            'conteudo4'
+            'foto1 '
+            'foto2'
+            'foto3 '
+            'foto4'
+            'footer';
+    }
+}
